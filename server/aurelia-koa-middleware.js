@@ -55,6 +55,8 @@ exports.aureliaKoaMiddleware = function (renderOptions) {
                     return [4 /*yield*/, aurelia_ssr_1.render(Object.assign({ route: ctx.request.URL.pathname }, renderOptions))];
                 case 3:
                     html = _a.sent();
+                    // just to indicate when server-view is active
+                    html = html.replace('collapse navbar-collapse', 'collapse navbar-collapse green');
                     ctx.body = html;
                     return [3 /*break*/, 5];
                 case 4:
