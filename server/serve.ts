@@ -4,7 +4,7 @@ import {aureliaKoaMiddleware} from './aurelia-koa-middleware';
 
 const root = path.join(__dirname, '../');
 const output = 'dist';
-const port = 8765;
+const port = process.env.PORT || 8080;
 
 function serve(assets) {
   return new Promise(resolve => {

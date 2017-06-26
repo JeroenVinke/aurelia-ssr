@@ -40,7 +40,7 @@ var path = require("path");
 var aurelia_koa_middleware_1 = require("./aurelia-koa-middleware");
 var root = path.join(__dirname, '../');
 var output = 'dist';
-var port = 8765;
+var port = process.env.PORT || 8080;
 function serve(assets) {
     var _this = this;
     return new Promise(function (resolve) {
