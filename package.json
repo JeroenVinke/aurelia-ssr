@@ -11,7 +11,7 @@
   "license": "CC0-1.0",
   "scripts": {
     "test": "nps test",
-    "start": "./node_modules/.bin/ts-node server/index",
+    "start": "node server/index.js",
     "ssr": "nps ssr"
   },
   "jest": {
